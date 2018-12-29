@@ -1,13 +1,13 @@
 {
-  "name": "FECdemo",
+  "name": "FEC-Ammar-Proxy",
   "version": "1.0.0",
-  "description": "",
+  "description": "practice on proxy server init for HR bootcamp",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ammar alnatsheh <ammar.alnatsheh@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "morgan": "^1.9.0",
