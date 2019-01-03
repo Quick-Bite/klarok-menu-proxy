@@ -2,36 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>FEC-Ammar-Proxy</title>
   </head>
   <body>
-    <div id="Profile"></div>
-    <div id="Menu"></div>
-    <div id="Suggestions"></div>
-    <div id="Reviews"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
+
+    <div id="header"><img src = "./assets/header.png"></div>
+    <div id="app">
+        <span id="main">
+            <div id="Profile"><img src = "./assets/profile.png"></div>
+            <div id="Menu"><img src = "./assets/menu.png"></div>
+            <div id="Suggestions"><img src = "./assets/suggestions.png"></div>
+            <div id="Reviews"></div>
+        </span>
+        <span id="bag"><img src = "./assets/bag.png"></span>
+    </div>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script src="./lib/react.development.js"></script>
+    <script src="./lib/react-dom.development.js"></script>
+    <!-- <script src="http://localhost:3001/app.js"></script> -->
+    <!-- <script src="http://localhost:3002/app.js"></script> -->
+    <!-- <script src="http://localhost:3003/app.js"></script> -->
+    <script src="http://localhost:3004/bundle.js"></script>
     <script>
+      let id = parseInt(prompt("enter restaurant id"));
       ReactDOM.render(
-        React.createElement(Profile),
-        document.getElementById('Profile')
-      );
-      ReactDOM.render(
-        React.createElement(Menu),
-        document.getElementById('Menu')
-      );
-      ReactDOM.render(
-        React.createElement(Suggestions),
-        document.getElementById('Suggestions')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
+        React.createElement(Reviews(id)),
         document.getElementById('Reviews')
       );
     </script>

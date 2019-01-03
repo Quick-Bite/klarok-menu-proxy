@@ -1,2 +1,20 @@
+body {
+    padding: '5px';
+}
 
+image{
+    padding: '0px';
+}
+
+#app {
+    display: inline-flex;
+}
+
+#bag {
+    width: '30%';
+}
+
+#main {
+    display: block;
+}
 
