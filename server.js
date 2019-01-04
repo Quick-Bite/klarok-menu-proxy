@@ -50,7 +50,7 @@ app.get('/restaurants/:id/menu-items', (req, res) => {
 
 app.get('/restaurants/:id/menu-items/:itemId', (req, res) => {
   // get all the menu item Id from the menu server
-  httpReq.get(`http://localhost:3002/restaurants/${req.params.id}/itemId`)
+  httpReq.get(`http://localhost:3002/restaurants/${req.params.id}/menu-items/${req.params.itemId}`)
   .then(function (req) {
     res.status(200).send(req.data);
   })
