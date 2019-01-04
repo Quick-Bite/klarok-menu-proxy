@@ -1,21 +1,18 @@
 body {
-    padding: '5px';
-}
-
-image{
-    padding: '0px';
-    width: '100%';
+    padding: 0px 10px 10px 10px;
+    align-content: center;
 }
 
 #app {
     display: inline-flex;
 }
 
-#bag {
-    width: '30%';
+img {
+    width: 100%;
 }
 
 #main {
     display: block;
+    max-width: 75%; 
 }
 
