@@ -4,6 +4,7 @@ body {
 
 image{
     padding: '0px';
+    width: '100%';
 }
 
 #app {
