@@ -72,6 +72,19 @@ app.get('/restaurants/:id/order', (req, res) => {
 
 });
 
+app.get('/restaurants/:id/profile', (req, res) => {
+  // get all the profile from profile server
+  httpReq.get(`http://localhost:3001/restaurants/${req.params.id}/profile`)
+  .then(function (req) {
+    res.status(200).send(req.data);
+  })
+  .catch(function (error) {
+    res.status(501).send(error);
+  });
+
+});
+
+
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
 });
