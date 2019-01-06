@@ -4,7 +4,7 @@
   "description": "practice on proxy server init for HR bootcamp",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "node ./server.js"
   },
   "keywords": [],
   "author": "ammar alnatsheh <ammar.alnatsheh@gmail.com>",
