@@ -14,7 +14,7 @@ app.get('/restaurants/:id', (req, res) => {
 
 app.get('/restaurants/:id/reviews', (req, res) => {
   // get all the reviews from the reviews server
-  httpReq.get(`http://ec2-54-183-220-92.us-west-1.compute.amazonaws.com/restaurants/${req.params.id}/reviews`)
+  httpReq.get(`http://ec2-13-56-233-213.us-west-1.compute.amazonaws.com/restaurants/${req.params.id}/reviews`)
   .then(function (req) {
     res.status(200).send(req.data);
   })
